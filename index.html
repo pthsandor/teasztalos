@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC" -//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Asztalos weblap</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"><!--Bootstrap keretrendszer-->
+        <link href="style.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="style2.css" media="all">
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext"
+            rel="stylesheet">
+        <script type="text/javascript"></script>
+        <style type="text/css">
+               <?php $objectpos =get_post_meta($post->ID, 'img-position', true); ?>
+                   .object-fit_cover { object-fit: cover;
+                    object-position: <?php echo $objectpos ?>;
+           }
+               </style>
+    </head>
+    <body class="hatter">
+        <video autoplay loop muted class="tokkozepre maxmeret vidis">
+            <source
+                src="video2.mov"
+                type="video/mp4">
+        </video>
+
+        <div class="container">
+
+            <div class="container-fluid" style="width:100%;
+                z-index:2;
+                height:15vh;">
+                <div class="row d-flex justify-content-center" style="">
+                    <div class="col-12 col-md-12"
+                        style="">
+                        <div class="text-center menu"
+                            style="padding-right:2vw;">
+                            <a href="">rólunk</a>
+                            <a class="anchor-scroll"
+                                href=""
+                                data-class-to="menu"
+                                data-on-scroll="bounce">szolgáltatások</a>
+
+                            <a class="anchor-scroll"
+                                href=""
+                                data-class-to="menu">Galéria</a>
+                            <a class="anchor-scroll"
+                                href=""
+                                data-class-to="menu">kapcsolat</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="tokkozepre text-center cim"
+                    style="padding-bottom:10px;">
+                    <img
+                        src="feherlogo.png"
+                        alt="Asztalos-logo" style="width: 210px; margin-bottom:
+                        35px; margin-top: 30px;">
+                    <p> Tamás és Ervin</p>
+                    <p> A TE ASZTALOSAID</p>
+                    <div class="vonalka vizkozepre"></div>
+                    <div style="padding-top:30px; margin: 0;">
+                        <p style="margin:0;">+36 30 334 0725</p>
+                        <p style="margin:0;">+36 30 488 0708</p>
+                        <p style="margin:0;">asztalosemail@gmail.com</p>
+                        <p style="margin:0;"><a style="text-decoration: none;"
+                                href="https://www.facebook.com/KarliRobertfilm/">facebook.com/AsztalosFacebook</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container" style="padding-top:10px;">
+                <footer class="text-center footer" style="">
+
+                    <p class="lablec-fo vizkozepre">&copy; Tamás és Ervin | A TE
+                        ASZTALOSAID
+                        | Országos szolgáltatás | Asztalos munkák | 2019</p>
+                </footer>
+
+                <script
+                    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="<?php bloginfo('template_url');?>/js/bootstrap.js"></script>
+                <script>
+             Holder.addTheme('thumb', {
+               bg: '#55595c',
+               fg: '#eceeef',
+               text: 'Thumbnail'
+             });
+           </script>
+            </div>
+
+        </body>
+    </html>
